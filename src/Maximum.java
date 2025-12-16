@@ -1,4 +1,4 @@
-public class IntMax {
+public class Maximum {
     public static Integer FindMax(Integer a, Integer b, Integer c){
         Integer max=a;
         if(b.compareTo(max)>0){
@@ -11,6 +11,16 @@ public class IntMax {
     }
     public static Float FindMax(Float a, Float b, Float c){
         Float max=a;
+        if(b.compareTo(max)>0){
+            max=b;
+        }
+        if(c.compareTo(max)>0){
+            max=c;
+        }
+        return max;
+    }
+    public static String FindMax(String a, String b, String c){
+        String max=a;
         if(b.compareTo(max)>0){
             max=b;
         }
