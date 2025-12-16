@@ -1,4 +1,12 @@
-public class Maximum {
+public class Maximum<T extends Comparable<T>>  {
+    private T a;
+    private T b;
+    private T c;
+    public Maximum(T a, T b, T c) {
+        this.a=a;
+        this.b=b;
+        this.c=c;
+    }
     public static <T extends Comparable<T>> T FindMax(T a, T b, T c){
         T max=a;
         if(b.compareTo(max)>0){
@@ -9,5 +17,7 @@ public class Maximum {
         }
         return max;
     }
-
+    public T FindMax() {
+        return Maximum.FindMax(a, b, c);
+    }
 }
