@@ -12,7 +12,7 @@ public class Main {
             intArray[i]=sc.nextInt();
         }
         Maximum<Integer> intMax=new Maximum<>(intArray);
-        System.out.println(intMax.testMaximum().get()+" is the maximum integer.");
+        intMax.testMaximum();
         System.out.print("How many floats do you want to enter? ");
         int nF=sc.nextInt();
         Float[] floatArray=new Float[nF];
@@ -21,7 +21,7 @@ public class Main {
             floatArray[i]=sc.nextFloat();
         }
         Maximum<Float> floatMax=new Maximum<>(floatArray);
-        System.out.println(floatMax.testMaximum().get()+" is the maximum Float.");
+        floatMax.testMaximum();
         System.out.print("How many strings do you want to enter? ");
         int nS=sc.nextInt();
         sc.nextLine();
@@ -31,6 +31,6 @@ public class Main {
             stringArray[i]=sc.nextLine();
         }
         Maximum<String> stringMax=new Maximum<>(stringArray);
-        System.out.println(stringMax.testMaximum().get()+" is the maximum String.");
+        stringMax.testMaximum();
     }
 }

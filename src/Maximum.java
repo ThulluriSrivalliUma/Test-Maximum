@@ -12,7 +12,12 @@ public class Maximum<T extends Comparable<T>>{
             return Optional.empty();
         }
         Arrays.sort(values);
-        return Optional.of(values[values.length-1]);
+        T max=values[values.length-1];
+        printMax(max);
+        return Optional.of(max);
+    }
+    public static <T> void printMax(T value){
+        System.out.println("The maximum value is: "+value);
     }
     public Optional<T> testMaximum(){
         return Maximum.testMaximum(values);
