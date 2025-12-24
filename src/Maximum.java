@@ -7,7 +7,7 @@ public class Maximum<T extends Comparable<T>>  {
         this.b=b;
         this.c=c;
     }
-    public static <T extends Comparable<T>> T FindMax(T a, T b, T c){
+    public static <T extends Comparable<T>> T testMaximum(T a, T b, T c){
         T max=a;
         if(b.compareTo(max)>0){
             max=b;
@@ -17,7 +17,7 @@ public class Maximum<T extends Comparable<T>>  {
         }
         return max;
     }
-    public T FindMax() {
-        return Maximum.FindMax(a, b, c);
+    public T testMaximum() {
+        return Maximum.testMaximum(a, b, c);
     }
 }
