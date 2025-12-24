@@ -8,7 +8,7 @@ public class Main {
         int n=sc.nextInt();
         Integer[] intArray=new Integer[n];
         System.out.println("Enter "+n+" integers:");
-        for (int i=0;i<n;i++) {
+        for (int i=0;i<n;i++){
             intArray[i]=sc.nextInt();
         }
         Maximum<Integer> intMax=new Maximum<>(intArray);
@@ -17,7 +17,7 @@ public class Main {
         int nF=sc.nextInt();
         Float[] floatArray=new Float[nF];
         System.out.println("Enter "+nF+" floats:");
-        for (int i=0;i<nF;i++) {
+        for (int i=0;i<nF;i++){
             floatArray[i]=sc.nextFloat();
         }
         Maximum<Float> floatMax=new Maximum<>(floatArray);
@@ -27,7 +27,7 @@ public class Main {
         sc.nextLine();
         String[] stringArray=new String[nS];
         System.out.println("Enter "+nS+" strings:");
-        for (int i=0;i<nS;i++) {
+        for (int i=0;i<nS;i++){
             stringArray[i]=sc.nextLine();
         }
         Maximum<String> stringMax=new Maximum<>(stringArray);
